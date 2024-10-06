@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="main.js"></script>
+        <title>day3</title>
+    </head>
+    <body>
+        <h2>가위 바위 보</h2>
+
+        <div class="main-view">
+            <div class="score-view">
+                <div class="score">
+                    <p>Player Score</p>
+                    <span id="player-score">0</span>
+                </div>
+                <div class="score">
+                    <p>Computer Score</p>
+                    <span id="computer-score">0</span>
+                </div>
+            </div>
+            <h3>선택하기</h3>
+            <div class="player-choice">
+                <p>남은 횟수: <span class="game-count">10</span></p>
+                <p class="result"></p>
+                <div class="btn-list">
+                    <button class="game-btn" id="rock">바위</button>
+                    <button class="game-btn" id="scissors">가위</button>
+                    <button class="game-btn" id="paper">보</button>
+                </div>
+            </div>
+
+            <div class="result-view">
+                <h3>게임 종료!</h3>
+                <p id="result-message"></p>
+                <button id="reset">재시작</button>
+            </div>
+        </div>
+    </body>
+</html>
