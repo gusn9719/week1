@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>day5-1</title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="module" src="main.js" defer></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <h2>책 등록하기</h2>
+
+            <form id="book-submit">
+                <div id="book-list-input">
+                    <label for="title">제목:</label>
+                    <input type="text" id="title" name="title" required />
+
+                    <label for="writer">글쓴이:</label>
+                    <input type="text" id="writer" name="writer" />
+                </div>
+                <button type="submit" id="request">등록하기</button>
+            </form>
+
+            <div id="book-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>제목</th>
+                            <th colspan="2">글쓴이</th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-table-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
