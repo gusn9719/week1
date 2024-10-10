@@ -104,3 +104,16 @@ document.addEventListener('DOMContentLoaded', () => {
         mainGameView.classList.remove('hide');
     });
 });
+
+const images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg'];
+let currentIndex = 0;
+
+function showNextImage() {
+    currentIndex = (currentIndex + 1) % images.length; // 순환 처리
+    console.log(images[currentIndex]); // 현재 이미지 출력
+}
+
+function showPreviousImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length; // 순환 처리 (음수 방지)
+    console.log(images[currentIndex]); // 현재 이미지 출력
+}

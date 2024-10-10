@@ -1,0 +1,67 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#question {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.answer-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.answer-box {
+    width: 60%; /* 너비를 조정하여 중앙 정렬 효과를 개선 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.answer-box:hover {
+    background-color: #e0e0e0;
+}
+
+.answer-box.correct {
+    background-color: #c8e6c9;
+}
+
+.answer-box.incorrect {
+    background-color: #ffccbc;
+}
+
+#next-button {
+    width: 60%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#next-button.restart {
+    background-color: #e57373;
+}
