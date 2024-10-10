@@ -28,7 +28,7 @@
 }
 
 .answer-box {
-    width: 60%; /* 너비를 조정하여 중앙 정렬 효과를 개선 */
+    width: 60%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
